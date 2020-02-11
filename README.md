@@ -1,4 +1,80 @@
 # EVA_4_Assignments
+# Network:
+
+	class Net(nn.Module):
+		def __init__(self):
+			super(Net, self).__init__()
+			dout = nn.Dropout(0.1)
+			self.conv1 = nn.Sequential(
+			  nn.Conv2d(1, 16, 3),
+			  nn.ReLU(),
+			  nn.BatchNorm2d(16),
+			  dout
+			) #26
+			self.conv2 = nn.Sequential(
+			  nn.Conv2d(16, 32, 3),
+			  nn.ReLU(),
+			  nn.BatchNorm2d(32),
+			  dout
+			) #24
+			
+			self.conv3 = nn.Conv2d(32,10,1) #24
+
+			self.pool1 = nn.MaxPool2d(2,2) #12
+
+			self.conv4 = nn.Sequential(
+			  nn.Conv2d(10, 10, 3),
+			  nn.ReLU(),
+			  nn.BatchNorm2d(10),
+			  dout
+			) #10
+			
+			self.conv5 = nn.Sequential(
+			  nn.Conv2d(10, 16, 3),
+			  nn.ReLU(),
+			  nn.BatchNorm2d(16),
+			  dout
+			) #8
+			
+			self.conv6 = nn.Sequential(
+			  nn.Conv2d(16, 16, 3),
+			  nn.ReLU(),
+			  nn.BatchNorm2d(16),
+			  dout
+			) #6
+			
+			self.conv7 = nn.Sequential(
+			  nn.Conv2d(16, 16, 3),
+			  nn.ReLU(),
+			  #nn.BatchNorm2d(16),
+			  dout
+			) #4
+			
+			self.conv8 = nn.Sequential(
+			  nn.Conv2d(16, 10, 4),
+			  #nn.ReLU(),
+			  #nn.BatchNorm2d(10),
+			  dout          
+			) #1
+			
+
+
+		def forward(self, x):
+			x = self.conv1(x)  # i = 28  o = 26  RF= 3
+			x = self.conv2(x)  # i = 26  o = 24  RF= 5
+			x = self.conv3(x)  # i = 24  o = 24  RF= 5
+			x = self.pool1(x)  # i = 24  o = 12  RF= 10
+			x = self.conv4(x)  # i = 12  o = 10  RF= 12
+			x = self.conv5(x)  # i = 10  o = 8   RF= 14
+			#x = self.pool1(x)
+			x = self.conv6(x)  # i = 8  o = 6  RF= 16
+			x = self.conv7(x)  # i = 6  o = 4  RF= 18
+			x = self.conv8(x)  # i = 4  o = 1  RF= 20
+			#set_trace()
+			x = x.view(-1, 10)
+			return F.log_softmax(x)
+			#nn.Flatten(x)
+			#return F.softmax(x)
 
 # Model Summary:
 
