@@ -1,11 +1,30 @@
-class dataSetClass:
-    def __init__(self,root='./root',train=True,download = True):
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torchvision
+import torchvision.transforms as transforms
+from torchvision import datasets,transforms
+import matplotlib.pyplot as plt
+import numpy as np
+import torch.optim as optim
+import augmentation
+from utils import progress_bar
+
+class dataSetFunctions:
+    def __init__(self,root='./data',train=True,download = True):
         self.root 	= root
         self.train 	= train
         self.download = download
+		
+	def albumentationTransformations(self):
+		transform_train = augmentation.AlbumentationTransformTrain()
+		transform_test = augmentation.AlbumentationTransformTest()
+		return (transform_train, transform_test)
+		
+		
     def transformation(self,type='train'):
-        import torchvision
-        from torchvision import datasets,transforms
+        #import torchvision
+        #from torchvision import datasets,transforms
         print('\n### Applying transformations for the type : {}'.format(type))
         if type== 'train':
         	return transforms.Compose(
@@ -23,51 +42,39 @@ class dataSetClass:
         		]
         	)
     	
-    def dataSet(self,name='cifar10',type='train'):
-        import torchvision
-        from torchvision import datasets,transforms
-        print('\n### Preparing dataset for the name : {} and type : {}'.format(name,type))
-        if name == 'cifar10' and type == 'train':
-        	return datasets.CIFAR10(
-        		root 	= './root',
+    def dataSet(self,transform,name='cifar10'):
+        print('\n### Preparing dataset for the name : {} and type : {}'.format(name))
+        if name == 'cifar10':
+        	trainset = datasets.CIFAR10(
+        		root 	= self.root,
         		train 	= True,
         		download= True,
-        		transform= self.transformation(type=type)
+        		transform= transform[0]
         	)
-        elif name == 'cifar10' and type == 'test':
-        	return datasets.CIFAR10(
-        		root 	= './root',
+        	testset =  datasets.CIFAR10(
+        		root 	= self.root,
         		train 	= False,
         		download= True,
-        		transform= self.transformation(type=type)
+        		transform= transform[1]
         	)   
+		return (trainset,testset)
+			
     def dataSetClasses(self):
-        return self.dataSet().classes
+        return self.dataSet(self.albumentationTransformations()[0]).classes
         	
-    def dataLoader(self):
-        import torch
-        import torch.nn as nn
-        import torch.nn.functional as F
-        SEED = 1
-        # For reproducibility
-        torch.manual_seed(SEED)
+    def dataLoader(self,trainDataset,testDataset):
         
-        # CUDA?
-        cuda = torch.cuda.is_available()
-        print("CUDA Available?", cuda)
-        
-        
-        if cuda:
-            torch.cuda.manual_seed(SEED)
-        
+        #import torch
+        #import torch.nn as nn
+        #import torch.nn.functional as F
         # dataloader arguments - something you'll fetch these from cmdprmt
         dataloader_args = dict(shuffle=True, batch_size=128, num_workers=4, pin_memory=True) if cuda else dict(shuffle=True, batch_size=64)
         print('\n### Loading data from dataset')
         # train dataloader
-        train_loader = torch.utils.data.DataLoader(self.dataSet(type='train'), **dataloader_args)
+        train_loader = torch.utils.data.DataLoader(trainDataset, **dataloader_args)
         
         # test dataloader
-        test_loader = torch.utils.data.DataLoader(self.dataSet(type='test'), **dataloader_args)
+        test_loader = torch.utils.data.DataLoader(testDataset, **dataloader_args)
         return (train_loader,test_loader)
         
     def datasetMeanVarStd(self,dset):
@@ -79,3 +86,4 @@ class dataSetClass:
         print('\n### Var is  : {}'.format(np.var(dset.data)))
         print('\n### Std is : {}'.format(np.std(dset.data)))
  
+
