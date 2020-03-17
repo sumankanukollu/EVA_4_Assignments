@@ -30,7 +30,7 @@ class dataSetFunctions:
         	return transforms.Compose(
         		[transforms.RandomCrop(32, padding=4),
         		transforms.RandomHorizontalFlip(),
-    		    transforms.ToTensor(),
+        	    transforms.ToTensor(),
         		transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
         		]
         	)
@@ -41,9 +41,9 @@ class dataSetFunctions:
         		transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
         		]
         	)
-    	
+
     def dataSet(self,transform,name='cifar10'):
-        print('\n### Preparing dataset for the name : {} and type : {}'.format(name))
+        print('\n### Preparing dataset for the name : {}'.format(name))
         if name == 'cifar10':
         	trainset = datasets.CIFAR10(
         		root 	= self.root,
@@ -57,18 +57,13 @@ class dataSetFunctions:
         		download= True,
         		transform= transform[1]
         	)   
-		return (trainset,testset)
+        return (trainset,testset)
 			
-    def dataSetClasses(self):
-        return self.dataSet(self.albumentationTransformations()[0]).classes
+    def dataSetClasses(self,trainset):
+        return trainset.classes
         	
     def dataLoader(self,trainDataset,testDataset):
-        
-        #import torch
-        #import torch.nn as nn
-        #import torch.nn.functional as F
-        # dataloader arguments - something you'll fetch these from cmdprmt
-        dataloader_args = dict(shuffle=True, batch_size=128, num_workers=4, pin_memory=True) if cuda else dict(shuffle=True, batch_size=64)
+        dataloader_args = dict(shuffle=True, batch_size=128, num_workers=4, pin_memory=True) if torch.cuda.is_available() else dict(shuffle=True, batch_size=64)
         print('\n### Loading data from dataset')
         # train dataloader
         train_loader = torch.utils.data.DataLoader(trainDataset, **dataloader_args)
@@ -85,5 +80,3 @@ class dataSetFunctions:
         print('\n### Mean is : {}'.format(np.mean(dset.data)))
         print('\n### Var is  : {}'.format(np.var(dset.data)))
         print('\n### Std is : {}'.format(np.std(dset.data)))
- 
-
