@@ -37,7 +37,8 @@
 	  - Output       : Network results will be saved here  
 
 # LR Finder graph:
-![image](outputs\LR_Finder_Graph.JPG)
+![LR](https://github.com/sumankanukollu/EVA_4_Assignments/blob/S_10_LRFinder_Misclassified_Cifar10/pytorch_Framework_suman-S9/pytorch_Framework_suman/outputs/LR_Finder_Graph.JPG?raw=true)
+![image](outputs/LR_Finder_Graph.JPG)
 
 # Training and Test Accuracy curves:
 ![image](outputs\metrics.png)
