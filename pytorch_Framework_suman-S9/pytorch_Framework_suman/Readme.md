@@ -4,7 +4,7 @@
 
 - [Github link](https://github.com/sumankanukollu/EVA_4_Assignments/blob/S_10_LRFinder_Misclassified_Cifar10/EVA_4_S10_Suman_Kanukollu_LRFinder_CIFAR_10.ipynb) 
 
-- [Colab link](https://colab.research.google.com/drive/1jGgGJ6kNnGwnj_C2rKoKFs1vPw5mumDH?authuser=1#scrollTo=YiVNB8nL5Rtk)
+- [Colab link](https://colab.research.google.com/drive/1jGgGJ6kNnGwnj_C2rKoKFs1vPw5mumDH?authuser=1#scrollTo=Hlwo4vT9Fccp)
 
 
 # Model Summary:
@@ -41,13 +41,13 @@
 
 
 # Training and Test Accuracy curves:
-![image](outputs\metrics.png)
+![image](https://github.com/sumankanukollu/EVA_4_Assignments/blob/S_10_LRFinder_Misclassified_Cifar10/pytorch_Framework_suman-S9/pytorch_Framework_suman/outputs/TrainTestAccGraph.JPG?raw=true)
 
 # 25 misclassified Images:
-![image](outputs\misclassified.png)
+![image](https://github.com/sumankanukollu/EVA_4_Assignments/blob/S_10_LRFinder_Misclassified_Cifar10/pytorch_Framework_suman-S9/pytorch_Framework_suman/outputs/misclassified.JPG?raw=true)
 
 # GradCam on 25 misclassified images:
-![image](outputs\25_misclassifiedGradCamImages.jpg)
+![image](https://github.com/sumankanukollu/EVA_4_Assignments/blob/S_10_LRFinder_Misclassified_Cifar10/pytorch_Framework_suman-S9/pytorch_Framework_suman/outputs/25_misclassifiedGradCamImages.jpg?raw=true)
 # Logs
 
   - **Best accuracy**
