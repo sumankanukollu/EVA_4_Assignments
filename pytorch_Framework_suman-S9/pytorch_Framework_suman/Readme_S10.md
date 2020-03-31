@@ -36,9 +36,6 @@
 	  - Sampleimages : Where user can place images for testing the code
 	  - Output       : Network results will be saved here  
 
-# LR Finder graph:
-![image](outputs\LR_Finder_Graph.JPG)
-
 # Training and Test Accuracy curves:
 ![image](outputs\metrics.png)
 
@@ -325,9 +322,8 @@
 #**Analysis:**
 
 - No of Epochs : 50
-- Batch size : 128
-- **Best Train Accuracy is :** 94.79% at 50-Epoch
-- **Best Test Accuracy  is :** 91.05% at 47-Epoch
+- **Best Train Accuracy is :** 94.79 at 50-Epoch
+- **Best Test Accuracy  is :** 91.05 at 47-Epoch
 - **Min. Train Loss is :** 0.001190 at 50-Epoch
 - **Min. Test Loss  is :** 0.002489 at 47-Epoch
 - **Target-88.0% achieved at 19th epoch,Train accuracy is :** 88.018
@@ -335,12 +331,6 @@
   
   
 - No Model changes in Resnet18
-	- Cutout : Yes
-	- Hyperparameters:
-		- Optimizer: SGD
-		- Best LR Value for the given model is : 0.0575
-		- Momentum: 0.9
-
     
 	- Normalization:
 	  - transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
@@ -353,7 +343,5 @@
 	  - Test
 	     - Nothing
 	  
-
-
 
  
