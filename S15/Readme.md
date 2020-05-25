@@ -41,9 +41,9 @@ Segregated the task into smaller steps as described below:
 
 * [**Step-5**](#Code-Modularity) Code Modularity
 
-* [**Step-6:**](#Execution-commands)  Execution commands
+* [**How to Run**](#Execution-commands)  Execution commands
 
-* [**Step-7:**](#Concepts-Explored)  Concepts Explored
+* [**Concepts Explored**](#Concepts-Explored)  Concepts Explored
 
 
 # Source code links:
