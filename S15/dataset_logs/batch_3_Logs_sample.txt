@@ -1,0 +1,146 @@
+Command to generate one batch zip file:
+##########################################
+    os.chdir(os.path.join(scriptsPath,'pythonFiles'))
+    !python s15_datasetScript.py -o '/content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip' -s 11 -e 16 -bf 1 -bfm 1 
+
+    os.chdir('/content/drive/My Drive/EVA4/S15/lib/DenseDepth')
+    !python test.py --input '/content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip' --start 0 --end 5001 -o '/content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip' -rs 0 -re 5001 -b 50
+    !python test.py --input '/content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip' --start 0 --end 5001 -o '/content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip' -rs 5000 -re 10001 -b 50
+    !python test.py --input '/content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip' --start 0 --end 10000 -o '/content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip' -rs 10000 -re 15001 -b 50
+    !python test.py --input '/content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip' --start 0 --end 15000 -o '/content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip' -rs 15000 -re 20001 -b 50
+    
+    
+Colab output logs:
+####################
+    11 16
+    Output is generating at : /content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip
+    Using background : 11
+    500
+    1000
+    1500
+    2000
+    Using background : 12
+    500
+    1000
+    1500
+    2000
+    Using background : 13
+    500
+    1000
+    1500
+    2000
+    Using background : 14
+    500
+    1000
+    1500
+    2000
+    Using background : 15
+    500
+    1000
+    1500
+    2000
+    Duration: 0:05:56.171288
+    Using TensorFlow backend.
+    Loading model...
+    ### Step-1: Time took to load model : 0:00:54.931284
+
+    Model loaded (nyu.h5).
+    tcmalloc: large alloc 3010560000 bytes == 0xd69f6000 @  0x7fca505a81e7 0x7fca4cf9d5e1 0x7fca4d001c78 0x7fca4d001d93 0x7fca4d09fea8 0x7fca4d0a0704 0x7fca4d0a0852 0x566d63 0x59fc4e 0x7fca4cfed4ed 0x50a2bf 0x50bfb4 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64 0x588e5c 0x59fc4e 0x7fca4cfed4ed 0x50a2bf 0x50bfb4 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64
+
+    Loaded (2500) images of size (224, 224, 3).
+    ### Step-2: Time took to load Images : 0:00:16.870675
+    At batch sz : 50
+    utils predict Duration: 0:01:26.444654
+    ### Step-3: Time took to compute results : 0:01:26.563753
+    tcmalloc: large alloc 3010560000 bytes == 0x7fc8df9a2000 @  0x7fca505a81e7 0x7fca4cf9d5e1 0x7fca4d004420 0x7fca4cff97d5 0x7fca4d08e497 0x50a635 0x50bfb4 0x507d64 0x50ae13 0x634c82 0x634d37 0x6384ef 0x639091 0x4b0d00 0x7fca501a5b97 0x5b250a
+    Directory for depth mask outputs : /content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip
+    500
+    1000
+    1500
+    2000
+    2500
+    Traceback (most recent call last):
+      File "test.py", line 75, in <module>
+        display_images(outputs.copy(), inputs.copy(),outputPath=args.outputpath,start = int(args.start), end = int(args.end),imgName=imgName)
+      File "/content/drive/My Drive/EVA4/S15/lib/DenseDepth/utils.py", line 214, in display_images
+        rescaled = outputs[i][:,:,0]
+    IndexError: index 2500 is out of bounds for axis 0 with size 2500
+    Using TensorFlow backend.
+    Loading model...
+    ### Step-1: Time took to load model : 0:00:16.889797
+
+    Model loaded (nyu.h5).
+    tcmalloc: large alloc 3010560000 bytes == 0xd62ba000 @  0x7f3b2714c1e7 0x7f3b23b415e1 0x7f3b23ba5c78 0x7f3b23ba5d93 0x7f3b23c43ea8 0x7f3b23c44704 0x7f3b23c44852 0x566d63 0x59fc4e 0x7f3b23b914ed 0x50a2bf 0x50bfb4 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64 0x588e5c 0x59fc4e 0x7f3b23b914ed 0x50a2bf 0x50bfb4 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64
+
+    Loaded (2500) images of size (224, 224, 3).
+    ### Step-2: Time took to load Images : 0:00:17.307467
+    At batch sz : 50
+    utils predict Duration: 0:01:22.224010
+    ### Step-3: Time took to compute results : 0:01:22.351826
+    tcmalloc: large alloc 3010560000 bytes == 0x7f39b63c2000 @  0x7f3b2714c1e7 0x7f3b23b415e1 0x7f3b23ba8420 0x7f3b23b9d7d5 0x7f3b23c32497 0x50a635 0x50bfb4 0x507d64 0x50ae13 0x634c82 0x634d37 0x6384ef 0x639091 0x4b0d00 0x7f3b26d49b97 0x5b250a
+    Directory for depth mask outputs : /content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip
+    500
+    1000
+    1500
+    2000
+    2500
+    Traceback (most recent call last):
+      File "test.py", line 75, in <module>
+        display_images(outputs.copy(), inputs.copy(),outputPath=args.outputpath,start = int(args.start), end = int(args.end),imgName=imgName)
+      File "/content/drive/My Drive/EVA4/S15/lib/DenseDepth/utils.py", line 214, in display_images
+        rescaled = outputs[i][:,:,0]
+    IndexError: index 2500 is out of bounds for axis 0 with size 2500
+    Using TensorFlow backend.
+    Loading model...
+    ### Step-1: Time took to load model : 0:00:13.276254
+
+    Model loaded (nyu.h5).
+    tcmalloc: large alloc 3010560000 bytes == 0xd6eca000 @  0x7fce937841e7 0x7fce901795e1 0x7fce901ddc78 0x7fce901ddd93 0x7fce9027bea8 0x7fce9027c704 0x7fce9027c852 0x566d63 0x59fc4e 0x7fce901c94ed 0x50a2bf 0x50bfb4 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64 0x588e5c 0x59fc4e 0x7fce901c94ed 0x50a2bf 0x50bfb4 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64
+
+    Loaded (2500) images of size (224, 224, 3).
+    ### Step-2: Time took to load Images : 0:00:17.401460
+    At batch sz : 50
+    utils predict Duration: 0:01:22.306713
+    ### Step-3: Time took to compute results : 0:01:22.429049
+    tcmalloc: large alloc 3010560000 bytes == 0x7fcd228a8000 @  0x7fce937841e7 0x7fce901795e1 0x7fce901e0420 0x7fce901d57d5 0x7fce9026a497 0x50a635 0x50bfb4 0x507d64 0x50ae13 0x634c82 0x634d37 0x6384ef 0x639091 0x4b0d00 0x7fce93381b97 0x5b250a
+    Directory for depth mask outputs : /content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip
+    500
+    1000
+    1500
+    2000
+    2500
+    Traceback (most recent call last):
+      File "test.py", line 75, in <module>
+        display_images(outputs.copy(), inputs.copy(),outputPath=args.outputpath,start = int(args.start), end = int(args.end),imgName=imgName)
+      File "/content/drive/My Drive/EVA4/S15/lib/DenseDepth/utils.py", line 214, in display_images
+        rescaled = outputs[i][:,:,0]
+    IndexError: index 2500 is out of bounds for axis 0 with size 2500
+    Using TensorFlow backend.
+    Loading model...
+    ### Step-1: Time took to load model : 0:00:13.145526
+
+    Model loaded (nyu.h5).
+    tcmalloc: large alloc 3010560000 bytes == 0xd6a82000 @  0x7f9156d1d1e7 0x7f91537125e1 0x7f9153776c78 0x7f9153776d93 0x7f9153814ea8 0x7f9153815704 0x7f9153815852 0x566d63 0x59fc4e 0x7f91537624ed 0x50a2bf 0x50bfb4 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64 0x588e5c 0x59fc4e 0x7f91537624ed 0x50a2bf 0x50bfb4 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64 0x509a90 0x50a48d 0x50cd96 0x507d64
+
+    Loaded (2500) images of size (224, 224, 3).
+    ### Step-2: Time took to load Images : 0:00:17.432586
+    At batch sz : 50
+    utils predict Duration: 0:01:22.366079
+    ### Step-3: Time took to compute results : 0:01:22.488718
+    tcmalloc: large alloc 3010560000 bytes == 0x7f8fe5cc2000 @  0x7f9156d1d1e7 0x7f91537125e1 0x7f9153779420 0x7f915376e7d5 0x7f9153803497 0x50a635 0x50bfb4 0x507d64 0x50ae13 0x634c82 0x634d37 0x6384ef 0x639091 0x4b0d00 0x7f915691ab97 0x5b250a
+    Directory for depth mask outputs : /content/drive/My Drive/EVA4/S15/dataset/zipFiles/batch_3.zip
+    500
+    1000
+    1500
+    2000
+    2500
+    Traceback (most recent call last):
+      File "test.py", line 75, in <module>
+        display_images(outputs.copy(), inputs.copy(),outputPath=args.outputpath,start = int(args.start), end = int(args.end),imgName=imgName)
+      File "/content/drive/My Drive/EVA4/S15/lib/DenseDepth/utils.py", line 214, in display_images
+        rescaled = outputs[i][:,:,0]
+    IndexError: index 2500 is out of bounds for axis 0 with size 2500
+
+Total time took to generate one batch File:
+#############################################   
+    time: 24min 38s
