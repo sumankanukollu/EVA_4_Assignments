@@ -1,4 +1,4 @@
-#Image "Depth-Map" and "Mask" prediction In single Model
+# Image "Depth-Map" and "Mask" prediction In single Model
 
  ![BG FG Image](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/dataset_logs/5_test_bgfg.png)
 
@@ -7,7 +7,7 @@
 ![Depthmap](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/dataset_logs/5_test_predicted_depth.png)
 
 
-#Objective:
+# Objective:
 
 Here I am trying to solve an open problem, i.e., for the given image (with **foreground object** and **background image**), 
 
@@ -16,7 +16,7 @@ Here I am trying to solve an open problem, i.e., for the given image (with **for
 
 This repository contains simple PyTorch implementations of **U-Net**, trained on [600K custom dataset](https://drive.google.com/drive/folders/11dkmzwk3CbB9utnlz-G2yLzvGb71E0zN?usp=sharing).
 
-#Approach to achieve:
+# Approach to achieve:
 
 Segregated the task into smaller steps as described below:
 
@@ -29,14 +29,14 @@ Segregated the task into smaller steps as described below:
 * [**Step-5:**](#Save and load the results)  Save and load the results
 * [**Step-6:**](#Save/Plot the results )  Save/Plot the results 
 
-#Custom Dataset Preparation:
+# Custom Dataset Preparation:
 
 * **Dataset Size** : **600K**  = (**200K** - BG-FG Images + **200K** Mask + **200K** Depth Images)
 * Got to know that few modifications are needed with respect to the dataset, which I have created in Session-14, as part of Assignment-15A, so started with that and incorporated changes in scripts.
 * **What I achieved?** : Time took to generate the dataset with new modifications **is reduced to 5 Hours** (from 4-days, in Assignment-15A) 
 * Access the script from [here]()
 
-[back](#Approach to achieve:)
+[back](# Approach to achieve:)
 
 ## Data Statistics :bar_chart:
 
