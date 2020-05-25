@@ -25,7 +25,7 @@ This repository contains simple PyTorch implementations of **U-Net**, trained on
 
 Segregated the task into smaller steps as described below:
 
-* [**Step-1:**](#Custom Dataset Preparation)  Custom Dataset Preparation
+* [**Step-1:**](#Custom Dataset Preparation)
 
   * [data statistcs and folder structure](#Data Statistics :bar_chart:)
 
