@@ -411,6 +411,18 @@ Segregated the task into smaller steps as described below:
   * Each time if loss < Val_loss_min, save the checkpoint as best model.
   * Load this checkpoint with "torch.load" for next run. (Can see the logic in below train and validation logs)
 
+## Summary of Training cycles:
+
+| S.No    | Zip File Name | Train Sz | Test Sz | Batch Sz | Epochs          |
+| ------- | ------------- | -------- | ------- | -------- | --------------- |
+| 1       | batch_1.zip   | 21K      | 7K      | 50       | 5               |
+| 2       | batch_2.zip   | 21K      | 7K      | 50       | 5               |
+| 3       | batch_3.zip   | 21K      | 7K      | 50       | 5               |
+| ....... | .......       | .......  | ....... | .......  | .......         |
+| ....... | .......       | .......  | ....... | .......  | .......         |
+| 20      | batch_20.zip  | 21K      | 7K      | 50       | 5               |
+|         |               |          |         |          | **Total : 100** |
+
 ## Train and Validation Logs:
 
 ```
@@ -848,6 +860,16 @@ time: 33min 9s
 
 
 [back](#Approach to achieve:)
+
+## loss Functions used:
+
+* BCE loss with logits (segmoid handled internally) is used for both image and text labels ground truth. 
+* For image pixel based tasks, SSIM and even Dice loss can be considered. 
+* Tried all 3;
+  * (BCE with logits)
+  * SSIM (with kernel size 3 and reduction method as mean) and 
+  * Dice loss
+*  BCE loss seems to be giving better result. With other 2 loss functions got black screen (may be something I missed)
 
 # Code Modularity:
 
