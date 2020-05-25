@@ -26,7 +26,7 @@ This repository contains simple PyTorch implementations of **U-Net**, trained on
 Segregated the task into smaller steps as described below:
 
 * [**Step-1:**](#Custom-Dataset-Preparation) Custom Dataset Preparation
-    * [data statistcs and folder structure](#Data-Statistics-:bar_chart:)
+    * [data statistcs and folder structure](#Data-Statistics)
 
 * [**Step-2:**](#Strategy-to-work-with-Huge-Dataset-in-Google-Drive) Strategy to work with Huge Dataset: *(in Google Drive)*
 
@@ -58,7 +58,7 @@ Segregated the task into smaller steps as described below:
 
 [back](#Approach-to-achieve)
 
-## Data Statistics :bar_chart:
+## Data Statistics:
 
 * Whole <u>600K dataset</u> is divided into <u>20-Zip Files</u>, each one is having 30K images (30K * 20 = 600K).
 
