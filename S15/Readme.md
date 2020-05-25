@@ -1,10 +1,10 @@
 # Image "Depth-Map" and "Mask" prediction In single Model
 
- <img src="C:\Users\skanukollu\Documents\cnn_suman\S15_assets\EVA4\EVA_4_Assignments\S15\dataset_logs\5_test_bgfg.png" alt="BGFG Image" style="zoom:100%;" />
+ ![BG FG Image](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/dataset_logs/5_test_bgfg.png)
 
-![Mask Image](C:\Users\skanukollu\Documents\cnn_suman\S15_assets\EVA4\EVA_4_Assignments\S15\dataset_logs\5_test_predicted_mask.png)
+![Mask Image](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/dataset_logs/5_test_predicted_mask.png)
 
-![Depthmap](C:\Users\skanukollu\Documents\cnn_suman\S15_assets\EVA4\EVA_4_Assignments\S15\dataset_logs\5_test_predicted_depth.png)
+![Depthmap](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/dataset_logs/5_test_predicted_depth.png)
 
 ## Table of contents:
 
