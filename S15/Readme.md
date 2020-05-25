@@ -26,9 +26,9 @@ This repository contains simple PyTorch implementations of **U-Net**, trained on
 Segregated the task into smaller steps as described below:
 
 * [**Step-1:**](#Custom-Dataset-Preparation) Custom Dataset Preparation
-    * [data statistcs and folder structure](#Data-Statistics)
+    * [data statistcs and folder structure](#Data-Statistics-:bar_chart:)
 
-* [**Step-2:**](#Strategy-to-work-with-Huge-Dataset)  Strategy to work with Huge Dataset: *(in Google Drive)*
+* [**Step-2:**](#Strategy-to-work-with-Huge-Dataset-in-Google-Drive) Strategy to work with Huge Dataset: *(in Google Drive)*
 
 * [**Step-3:**](#Next-Step-is-to-start-writing-Model)  Next Step is to start writing Model
 
@@ -149,7 +149,7 @@ Segregated the task into smaller steps as described below:
 
 [back](#Approach-to-achieve)
 
-# Strategy to work with Huge Dataset: *(in Google Drive)*
+# Strategy to work with Huge Dataset in Google Drive:
 
 * Another major hurdle is working with huge dataset in GDrive and Colab environment.
 
