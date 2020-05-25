@@ -26,21 +26,21 @@ This repository contains simple PyTorch implementations of **U-Net**, trained on
 Segregated the task into smaller steps as described below:
 
 * [**Step-1:**](#Custom-Dataset-Preparation) Custom Dataset Preparation
-    * [data statistcs and folder structure](#Data Statistics :bar_chart:)
+    * [data statistcs and folder structure](#Data-Statistics)
 
-* [**Step-2:**](#Strategy-to-work-with-Huge-Dataset:-*(in-Google-Drive)*)  Strategy to work with Huge Dataset: *(in Google Drive)*
+* [**Step-2:**](#Strategy-to-work-with-Huge-Dataset)  Strategy to work with Huge Dataset: *(in Google Drive)*
 
-* [**Step-3:**](#Next-Step-is-to-start-writing-Model:)  Next Step is to start writing Model
+* [**Step-3:**](#Next-Step-is-to-start-writing-Model)  Next Step is to start writing Model
 
-  * [Model Summary](#Model-Summary:)
+  * [Model Summary](#Model-Summary)
 
-* [**Step-4:**](#Train-and-Validation:)  Train and Validation
+* [**Step-4:**](#Train-and-Validation)  Train and Validation
 
-* [**Step-5**](#Code-Modularity:) Code Modularity
+* [**Step-5**](#Code-Modularity) Code Modularity
 
-* [**Step-6:**](#Execution-commands:)  Execution commands
+* [**Step-6:**](#Execution-commands)  Execution commands
 
-* [**Step-7:**](#Concepts-Explored:)  Concepts Explored
+* [**Step-7:**](#Concepts-Explored)  Concepts Explored
 
 
 # Source code links:
@@ -72,7 +72,7 @@ Segregated the task into smaller steps as described below:
 
 * [600K dataset can be accessed from here](https://drive.google.com/drive/folders/11dkmzwk3CbB9utnlz-G2yLzvGb71E0zN?usp=sharing)
 
- [back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+[back](#Approach-to-achieve)
 
   ### **:pushpin: Folder Structure**
   ```
@@ -147,7 +147,7 @@ Segregated the task into smaller steps as described below:
   time: 40.7 s
   ```
 
-[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+[back](#Approach-to-achieve)
 
 # Strategy to work with Huge Dataset: *(in Google Drive)*
 
@@ -211,7 +211,7 @@ Segregated the task into smaller steps as described below:
   
   ```
 
-  [back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+[back](#Approach-to-achieve)
 
 # Next Step is to start writing Model:
 
@@ -235,7 +235,7 @@ Segregated the task into smaller steps as described below:
   * **Initially my model has 47 Million parameters**, after I **reduced the number of parameters to 12Million**.
   * Model did fairly well in mask but not so good for depth estimation, have to do some modifications.
 
-  [back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+ [back](#Approach-to-achieve)
 
   # Model Summary:
 
@@ -391,7 +391,7 @@ Segregated the task into smaller steps as described below:
   ----------------------------------------------------------------
   ```
 
-[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+[back](#Approach-to-achieve)
 
 # Train and Validation: 
 
@@ -857,7 +857,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 time: 33min 9s
 ```
 
-[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+[back](#Approach-to-achieve)
 
 ## loss Functions used:
 
@@ -868,6 +868,8 @@ time: 33min 9s
   * SSIM (with kernel size 3 and reduction method as mean) and 
   * Dice loss
 *  BCE loss seems to be giving better result. With other 2 loss functions got black screen (may be something I missed)
+
+[back](#Approach-to-achieve)
 
 # Code Modularity:
 
@@ -884,7 +886,7 @@ time: 33min 9s
 
 
 
-[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+[back](#Approach-to-achieve)
 
 
 
@@ -903,7 +905,7 @@ time: 33min 9s
 
     
 
-[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+[back](#Approach-to-achieve)
 
 
 
@@ -926,4 +928,4 @@ time: 33min 9s
 * Segmentation Techniques
 * Loss Functions
 
-[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+[back](#Approach-to-achieve)
