@@ -25,7 +25,11 @@ This repository contains simple PyTorch implementations of **U-Net**, trained on
 
 Segregated the task into smaller steps as described below:
 
+<<<<<<< HEAD
 * [**Step-1:**](#Custom Dataset Preparation]) Custom Dataset Preparation
+=======
+* [**Step-1:**][#Custom Dataset Preparation] Custom Dataset Preparation
+>>>>>>> 9333e765aebc13aa78ff9b57fb9ee0d0e9083243
 
   * [data statistcs and folder structure](#Data Statistics :bar_chart:)
 
@@ -45,7 +49,7 @@ Segregated the task into smaller steps as described below:
 
   
 
-# Custom Dataset Preparation:
+# **Custom Dataset Preparation**
 
 * **Dataset Size** : **600K**  = (**200K** - BG-FG Images + **200K** Mask + **200K** Depth Images)
 * Got to know that few modifications are needed with respect to the dataset, which I have created in Session-14, as part of Assignment-15A, so started with that and incorporated changes in scripts.
@@ -1031,5 +1035,8 @@ time: 33min 9s
 * Loss Functions
 
 [back](#Approach to achieve:)
+<<<<<<< HEAD
 
 [#Custom Dataset Preparation]: 
+=======
+>>>>>>> 9333e765aebc13aa78ff9b57fb9ee0d0e9083243
