@@ -35,6 +35,9 @@ Segregated the task into smaller steps as described below:
   * [Model Summary](#Model-Summary)
 
 * [**Step-4:**](#Train-and-Validation)  Train and Validation
+     * [Summary of Training Cycles](#Summary-of-Training-cycles)
+     * [Train and validation Logs](#Train-and-Validation-Logs)
+     * [loss Functions used](#loss-Functions-used)
 
 * [**Step-5**](#Code-Modularity) Code Modularity
 
@@ -410,6 +413,8 @@ Segregated the task into smaller steps as described below:
   * Repeat the loop again for 3rd, 4th ......
   * Each time if loss < Val_loss_min, save the checkpoint as best model.
   * Load this checkpoint with "torch.load" for next run. (Can see the logic in below train and validation logs)
+  
+[back](#Approach-to-achieve)
 
 ## Summary of Training cycles:
 
@@ -422,6 +427,8 @@ Segregated the task into smaller steps as described below:
 | ....... | .......       | .......  | ....... | .......  | .......         |
 | 20      | batch_20.zip  | 21K      | 7K      | 50       | 5               |
 |         |               |          |         |          | **Total : 100** |
+
+[back](#Approach-to-achieve)
 
 ## Train and Validation Logs:
 
