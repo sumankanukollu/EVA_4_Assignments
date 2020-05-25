@@ -56,7 +56,7 @@ Segregated the task into smaller steps as described below:
 * **What I achieved?** : Time took to generate the dataset with new modifications **is reduced to 5 Hours** (from 4-days, in Assignment-15A) 
 * Access the script from [here](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/scripts/pythonFiles/s15_datasetScript.ipynb)
 
-[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
+[back](#Approach-to-achieve)
 
 ## Data Statistics :bar_chart:
 
