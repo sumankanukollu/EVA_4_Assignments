@@ -1,4 +1,4 @@
-# Image "Depth-Map" and "Mask" prediction In single Model
+#Image "Depth-Map" and "Mask" prediction In single Model
 
  ![BG FG Image](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/dataset_logs/5_test_bgfg.png)
 
@@ -6,22 +6,8 @@
 
 ![Depthmap](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/dataset_logs/5_test_predicted_depth.png)
 
-## Table of contents:
 
-1. [Objective](#Objective:)
-2. [Steps Followed - Breif]()
-3. [Steps Followed - Detail]()
-4. [Code modularity]()
-5. [Data Statistics]()
-6. [Data Management]()
-7. [Concepts Explored]()
-8. [Conclusion]()
-9. [Link to access Source code]()
-10. [Logs]()
-
-
-
-# Objective:
+#Objective:
 
 Here I am trying to solve an open problem, i.e., for the given image (with **foreground object** and **background image**), 
 
@@ -30,7 +16,7 @@ Here I am trying to solve an open problem, i.e., for the given image (with **for
 
 This repository contains simple PyTorch implementations of **U-Net**, trained on [600K custom dataset](https://drive.google.com/drive/folders/11dkmzwk3CbB9utnlz-G2yLzvGb71E0zN?usp=sharing).
 
-## Approach to achieve:
+#Approach to achieve:
 
 Segregated the task into smaller steps as described below:
 
@@ -43,7 +29,7 @@ Segregated the task into smaller steps as described below:
 * [**Step-5:**](#Save and load the results)  Save and load the results
 * [**Step-6:**](#Save/Plot the results )  Save/Plot the results 
 
-# Custom Dataset Preparation:
+#Custom Dataset Preparation:
 
 * **Dataset Size** : **600K**  = (**200K** - BG-FG Images + **200K** Mask + **200K** Depth Images)
 * Got to know that few modifications are needed with respect to the dataset, which I have created in Session-14, as part of Assignment-15A, so started with that and incorporated changes in scripts.
