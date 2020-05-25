@@ -25,22 +25,22 @@ This repository contains simple PyTorch implementations of **U-Net**, trained on
 
 Segregated the task into smaller steps as described below:
 
-* [**Step-1:**](Custom Dataset Preparation) Custom Dataset Preparation
+* [**Step-1:**](#Custom-Dataset-Preparation) Custom Dataset Preparation
     * [data statistcs and folder structure](#Data Statistics :bar_chart:)
 
-* [**Step-2:**](#Strategy to work with Huge Dataset: *(in Google Drive)*)  Strategy to work with Huge Dataset: *(in Google Drive)*
+* [**Step-2:**](#Strategy-to-work-with-Huge-Dataset:-*(in-Google-Drive)*)  Strategy to work with Huge Dataset: *(in Google Drive)*
 
-* [**Step-3:**](#Next Step is to start writing Model:)  Next Step is to start writing Model
+* [**Step-3:**](#Next-Step-is-to-start-writing-Model:)  Next Step is to start writing Model
 
-  * [Model Summary](#Model Summary:)
+  * [Model Summary](#Model-Summary:)
 
-* [**Step-4:**](#Train and Validation:)  Train and Validation
+* [**Step-4:**](#Train-and-Validation:)  Train and Validation
 
-* [**Step-5**](#Code Modularity:) Code Modularity
+* [**Step-5**](#Code-Modularity:) Code Modularity
 
-* [**Step-6:**](#Execution commands:)  Execution commands
+* [**Step-6:**](#Execution-commands:)  Execution commands
 
-* [**Step-7:**](#Concepts Explored:)  Concepts Explored
+* [**Step-7:**](#Concepts-Explored:)  Concepts Explored
 
 
 # Source code links:
@@ -54,9 +54,9 @@ Segregated the task into smaller steps as described below:
 * **Dataset Size** : **600K**  = (**200K** - BG-FG Images + **200K** Mask + **200K** Depth Images)
 * Got to know that few modifications are needed with respect to the dataset, which I have created in Session-14, as part of Assignment-15A, so started with that and incorporated changes in scripts.
 * **What I achieved?** : Time took to generate the dataset with new modifications **is reduced to 5 Hours** (from 4-days, in Assignment-15A) 
-* Access the script from [here]()
+* Access the script from [here](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/scripts/pythonFiles/s15_datasetScript.ipynb)
 
-[back](#Approach to achieve:)
+[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
 
 ## Data Statistics :bar_chart:
 
@@ -68,11 +68,11 @@ Segregated the task into smaller steps as described below:
 
 * Each zip file is having around ~ 195 MB
 
-* [link to Script]()
+* [link to Script](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/scripts/pythonFiles/s15_datasetScript.ipynb)
 
 * [600K dataset can be accessed from here](https://drive.google.com/drive/folders/11dkmzwk3CbB9utnlz-G2yLzvGb71E0zN?usp=sharing)
 
-  [back](#Approach to achieve:)
+ [back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
 
   ### **:pushpin: Folder Structure**
   ```
@@ -147,7 +147,7 @@ Segregated the task into smaller steps as described below:
   time: 40.7 s
   ```
 
-[back](#Approach to achieve:)
+[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
 
 # Strategy to work with Huge Dataset: *(in Google Drive)*
 
@@ -211,7 +211,7 @@ Segregated the task into smaller steps as described below:
   
   ```
 
-  [back](#Approach to achieve:)
+  [back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
 
 # Next Step is to start writing Model:
 
@@ -235,7 +235,7 @@ Segregated the task into smaller steps as described below:
   * **Initially my model has 47 Million parameters**, after I **reduced the number of parameters to 12Million**.
   * Model did fairly well in mask but not so good for depth estimation, have to do some modifications.
 
-  [back](#Approach to achieve:)
+  [back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
 
   # Model Summary:
 
@@ -391,7 +391,7 @@ Segregated the task into smaller steps as described below:
   ----------------------------------------------------------------
   ```
 
-  [back](#Approach to achieve:)
+[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
 
 # Train and Validation: 
 
@@ -857,9 +857,7 @@ Clipping input data to the valid range for imshow with RGB data ([0..1] for floa
 time: 33min 9s
 ```
 
-
-
-[back](#Approach to achieve:)
+[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
 
 ## loss Functions used:
 
@@ -886,7 +884,7 @@ time: 33min 9s
 
 
 
-[back](#Approach to achieve:)
+[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
 
 
 
@@ -905,7 +903,7 @@ time: 33min 9s
 
     
 
-[back](#Approach to achieve:)
+[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
 
 
 
@@ -928,4 +926,4 @@ time: 33min 9s
 * Segmentation Techniques
 * Loss Functions
 
-[back](#Approach to achieve:)
+[back](https://github.com/sumankanukollu/EVA_4_Assignments/edit/master/S15/Readme.md#Approach-to-achieve:)
