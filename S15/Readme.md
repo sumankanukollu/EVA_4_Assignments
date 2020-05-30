@@ -50,7 +50,7 @@ Segregated the task into smaller steps as described below:
 
 * Github Link : https://github.com/sumankanukollu/EVA_4_Assignments/tree/master/S15
 * [Script to create dataset](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/scripts/pythonFiles/s15_datasetScript.ipynb)
-* [Script to Train and Validation](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/scripts/colabFiles/EVA4_S15_Final_Mask_Depth_v1.ipynb)
+* [Script to Train and Validation](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/scripts/colabFiles/EVA4_S15_Final_Mask_Depth_v2.ipynb)
 
 # **Custom Dataset Preparation**
 
