@@ -20,6 +20,8 @@ This repository contains simple PyTorch implementations of **U-Net**, trained on
 # Github Link: 
 
 ​		https://github.com/sumankanukollu/EVA_4_Assignments/tree/master/S15
+*   Links to access outputs: https://drive.google.com/drive/folders/1rVov2L9nvnzHp3Qitk0uGGXRC3toz_l0?usp=sharing
+    (You can find the results w.r.t. each dataset folder like Batch_1, Batch_2,.....Batch_20)
 
 ## Approach to achieve:
 
