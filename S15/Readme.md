@@ -6,7 +6,7 @@
 
 ![Depthmap](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/dataset_logs/5_test_predicted_depth.png)
 
-
+![clicke here for the processed Images](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/outputs.md)
 
 # Objective:
 
@@ -20,8 +20,7 @@ This repository contains simple PyTorch implementations of **U-Net**, trained on
 # Github Link: 
 
 ​		https://github.com/sumankanukollu/EVA_4_Assignments/tree/master/S15
-*   Links to access outputs: https://drive.google.com/drive/folders/1rVov2L9nvnzHp3Qitk0uGGXRC3toz_l0?usp=sharing
-    (You can find the results w.r.t. each dataset folder like Batch_1, Batch_2,.....Batch_20)
+*   Links to access outputs: https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/outputs.md
 
 ## Approach to achieve:
 
