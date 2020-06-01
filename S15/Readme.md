@@ -6,7 +6,7 @@
 
 ![Depthmap](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/dataset_logs/5_test_predicted_depth.png)
 
-[clicke here for the processed Images](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/outputs.md)
+[Can see the test results here](https://github.com/sumankanukollu/EVA_4_Assignments/blob/master/S15/outputs.md)
 
 # Objective:
 
